@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/srl_refresh"
+    android:layout_above="@+id/tv_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F1">
+    <ListView
+
+    android:id="@+id/lv_history_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:divider="#ECF0F1"
+        android:dividerHeight="5dp"></ListView>
+</android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/tv_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+</RelativeLayout>

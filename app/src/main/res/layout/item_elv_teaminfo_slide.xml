@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffffff"
+    >
+    <TextView
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_btn_member_manager"
+        android:layout_toLeftOf="@+id/tv_btn_team_order"
+        android:background="#AAAAAA"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="成员管理"/>
+    <TextView
+        android:textColor="#ffffff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_btn_team_order"
+        android:background="#FE8800"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="组内订单"/>
+    <LinearLayout
+        android:background="#ffffff"
+        android:id="@+id/ll_item_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="组名"
+        android:textSize="16sp"
+        android:id="@+id/tv_teamname_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="jlsdf"
+            android:id="@+id/tv_captain_name_slide"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:text="sggsgag"
+            android:layout_below="@id/tv_captain_name_slide"
+            android:id="@+id/tv_captain_number_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

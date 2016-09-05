@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/create"
+    android:title="创建组"
+    />
+    <item android:id="@+id/myself"
+        android:title="个人信息"
+        />
+    <item android:id="@+id/logoff"
+        android:title="注销"
+        />
+</menu>

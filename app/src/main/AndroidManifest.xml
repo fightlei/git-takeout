@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cloudhua.ordersys" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/git"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name=".MainActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".TeamInfoActivity"/>
+        <receiver android:name=".MyBroadcast" >
+            <intent-filter >
+                <action android:name="android.intent.action.MY_BROADCAST"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.example.cloudhua.async.PushService"></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
